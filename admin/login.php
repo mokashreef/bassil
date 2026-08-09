@@ -1,6 +1,6 @@
 <?php
 session_start();
-$admin_password = "Basil1234#"; // Default password
+$admin_password = "add your password"; // Default password
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['password']) && $_POST['password'] === $admin_password) {

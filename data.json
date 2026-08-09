@@ -1,0 +1,70 @@
+{
+    "site_title": "BASSEL | Graphic Designer & Video Editor",
+    "meta_desc": "باسل - مصمم جرافيك ومونتير فيديو محترف. أحوّل الأفكار إلى تصاميم بصرية مميزة ومحتوى فيديو احترافي.",
+    "hero_badge": "متاح للعمل الحر",
+    "hero_name": "أهلاً، أنا <span>باسل</span>",
+    "hero_title": "Graphic Designer & Video Editor",
+    "hero_desc": "أحوّل الأفكار إلى تصاميم بصرية مميزة ومحتوى فيديو احترافي يجذب الأنظار ويحقق نتائج ملموسة.",
+    "hero_stats_1": "150",
+    "hero_stats_1_label": "مشروع مكتمل",
+    "hero_stats_2": "80",
+    "hero_stats_2_label": "عميل سعيد",
+    "hero_stats_3": "5",
+    "hero_stats_3_label": "سنوات خبرة",
+    "about_image": "https://scontent-fra5-1.xx.fbcdn.net/v/t39.30808-1/533258566_2593987494297520_5720649778756006701_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=KEVwAWNLIzsQ7kNvwGYXpTf&_nc_oc=AdmQJ5LtWybT8sLeZDekhJVSzR5VclvV5A8uCdnQMXeZL9KDZOoMDsfSsNQK8okkj7k&_nc_zt=24&_nc_ht=scontent-fra5-1.xx&_nc_gid=rmG_VxMkqG2xJMieb2PUfw&_nc_ss=8&oh=00_AfyirNHU4nRZVRe6JgcOcL9dOAquarhvACCVWfb5z-Z6PA&oe=69B61FF7",
+    "about_title": "تعرّف على <span>باسل</span>",
+    "about_desc_1": "مصمم جرافيك ومونتير فيديو محترف بخبرة تزيد عن 5 سنوات في مجال التصميم الإبداعي وإنتاج المحتوى المرئي. أعمل على تحويل أفكار العملاء إلى تصاميم بصرية مبتكرة ومحتوى فيديو يلفت الأنظار.",
+    "about_desc_2": "أتقن استخدام مجموعة أدوات Adobe الاحترافية وأسعى دائماً لتقديم أعمال بجودة عالية تلبي تطلعات العملاء وتتجاوز توقعاتهم.",
+    "contact_email": "basilakhaled2002@gmail.com",
+    "contact_whatsapp": "+963 996 934 403",
+    "contact_location": "دمشق - الجمهورية العربية السورية",
+    "social_instagram": "https://www.instagram.com/basil_khaled02",
+    "social_behance": "https://www.behance.net/basilkhaled",
+    "portfolio_images": [
+        "images/11.jpeg",
+        "images/22.jpeg",
+        "images/33.jpeg",
+        "images/44.jpeg",
+        "images/55.jpeg",
+        "images/66.jpeg",
+        "images/77.jpeg",
+        "images/88.jpeg"
+    ],
+    "services": [
+        {
+            "icon": "fas fa-crown",
+            "title": "تصميم الشعارات",
+            "desc": "تصميم شعارات احترافية فريدة تعكس هوية علامتك التجارية وتترك انطباعاً قوياً لدى جمهورك."
+        },
+        {
+            "icon": "fas fa-hashtag",
+            "title": "تصميم السوشيال ميديا",
+            "desc": "تصاميم جذابة ومتناسقة لمنصات التواصل الاجتماعي تزيد من تفاعل جمهورك وتعزز حضورك الرقمي."
+        },
+        {
+            "icon": "fas fa-fingerprint",
+            "title": "تصميم الهويات البصرية",
+            "desc": "بناء هوية بصرية شاملة ومتكاملة تشمل الألوان والخطوط والعناصر المرئية لتميّز علامتك."
+        },
+        {
+            "icon": "fab fa-youtube",
+            "title": "صور مصغرة لليوتيوب",
+            "desc": "تصميم صور مصغرة (Thumbnails) احترافية تجذب النقرات وتزيد مشاهدات قناتك على يوتيوب."
+        },
+        {
+            "icon": "fas fa-video",
+            "title": "مونتاج فيديوهات",
+            "desc": "مونتاج احترافي للفيديوهات مع تأثيرات بصرية وصوتية مميزة تجعل محتواك يبرز بين المنافسين."
+        },
+        {
+            "icon": "fas fa-mobile-alt",
+            "title": "مونتاج السوشيال ميديا",
+            "desc": "مونتاج فيديوهات قصيرة ومؤثرة مخصصة لمنصات التواصل مثل Instagram Reels و TikTok."
+        },
+        {
+            "icon": "fas fa-wand-magic-sparkles",
+            "title": "موشن جرافيك",
+            "desc": "تصميم رسوم متحركة بسيطة واحترافية تضيف حيوية لمحتواك وتوصل رسالتك بطريقة مبتكرة."
+        }
+    ]
+}

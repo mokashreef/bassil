@@ -1,11 +1,5 @@
-/* ============================================
-   Basel - Graphic Designer & Video Editor
-   Landing Page JavaScript
-   ============================================ */
-
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ===== Loading Screen =====
     const loader = document.querySelector('.loader');
     window.addEventListener('load', () => {
         setTimeout(() => {
@@ -13,32 +7,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 800);
     });
 
-    // ===== Header Scroll Effect =====
     const header = document.querySelector('.header');
     const backToTop = document.querySelector('.back-to-top');
 
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
 
-        // Header background
         if (scrollY > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
 
-        // Back to top button
         if (scrollY > 500) {
             backToTop.classList.add('visible');
         } else {
             backToTop.classList.remove('visible');
         }
 
-        // Active nav link
         updateActiveNavLink();
     });
 
-    // ===== Mobile Navigation =====
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     const navItems = document.querySelectorAll('.nav-links a');
@@ -57,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ===== Active Nav Link on Scroll =====
     function updateActiveNavLink() {
         const sections = document.querySelectorAll('section[id]');
         const scrollPos = window.scrollY + 200;
@@ -77,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ===== Scroll Reveal Animation =====
     const revealElements = document.querySelectorAll('.reveal');
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -93,7 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => revealObserver.observe(el));
 
-    // ===== Skill Bar Animation =====
     const skillBars = document.querySelectorAll('.skill-progress');
 
     const skillObserver = new IntersectionObserver((entries) => {
@@ -109,7 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     skillBars.forEach(bar => skillObserver.observe(bar));
 
-    // ===== Counter Animation =====
     const counters = document.querySelectorAll('.counter');
 
     const counterObserver = new IntersectionObserver((entries) => {
@@ -140,14 +125,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 30);
     }
 
-    // ===== YouTube Videos =====
     loadYouTubeVideos();
 
     async function loadYouTubeVideos() {
         const videosGrid = document.querySelector('.videos-grid');
         if (!videosGrid) return;
 
-        // أحدث الفيديوهات من قناة "كود التطور" (@code-elta6ur) - مُحدّث مارس 2026
         const videos = [
             {
                 id: 'DuUjOTPx2UI',
@@ -202,13 +185,11 @@ document.addEventListener('DOMContentLoaded', () => {
             videosGrid.appendChild(card);
         });
 
-        // Re-observe new elements
         document.querySelectorAll('.video-card.reveal').forEach(el => {
             revealObserver.observe(el);
         });
     }
 
-    // ===== Contact Form =====
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
@@ -228,7 +209,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Simulate form submission
             const submitBtn = contactForm.querySelector('.btn');
             const originalText = submitBtn.innerHTML;
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
@@ -248,7 +228,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showFormMessage(msg, type) {
-        // Remove existing messages
         const existing = document.querySelector('.form-message');
         if (existing) existing.remove();
 
@@ -271,7 +250,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => msgEl.remove(), 5000);
     }
 
-    // ===== Smooth Scroll for all anchor links =====
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -285,7 +263,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ===== Back to Top =====
     if (backToTop) {
         backToTop.addEventListener('click', () => {
             window.scrollTo({
@@ -295,7 +272,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ===== Tilt effect for service cards =====
     const serviceCards = document.querySelectorAll('.service-card');
     serviceCards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
@@ -316,7 +292,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// ===== Play YouTube Video (Global function) =====
 function playVideo(btn) {
     const thumbnail = btn.closest('.video-thumbnail');
     const videoId = thumbnail.getAttribute('data-video-id');
